@@ -6,6 +6,10 @@ An architecture and interiors concept with an interactive 27 m² space lab. Expl
 
 Design & development: **Rafayel Karamyan**.
 
+![Published ORQENSA homepage](docs/images/home.jpg)
+
+Verified release: **37 unit tests + 38 browser scenarios passed** across desktop Chromium, Firefox and mobile Chromium. See the [executed results](docs/validation.md).
+
 ## The experience
 
 - An editorial home page, asymmetric study index, four project stories, approach page and material library.
@@ -36,7 +40,7 @@ npx playwright install --with-deps chromium firefox
 npm run test:e2e    # Chromium, Firefox and mobile Chromium
 ```
 
-The GitHub Actions workflow runs checks and browser tests before publishing `dist/` to GitHub Pages. Repository settings must use **GitHub Actions** as the Pages source. The [verification record](docs/validation.md) distinguishes executed checks from prepared browser checks.
+The GitHub Actions workflow runs checks and browser tests before publishing `dist/` to GitHub Pages. Repository settings must use **GitHub Actions** as the Pages source. The [verification record](docs/validation.md) records the executed checks, visual review and remaining coverage limits.
 
 ## Data and portability
 

@@ -44,5 +44,3 @@ The original composition is preserved in two local WebP sizes, 900 and 1800 pixe
 - Downloaded the source photographs and visually inspected all six images at a contact-sheet scale before selection.
 - Preserved actual photography; no generated images or website screenshots are included.
 - Checked the production WebP files decode correctly with the stated dimensions and retained compositions.
-- The unused bright white interior candidate by Alex Kolundzija was reviewed in scratch and is not shipped.
-- No source download blocker remained. Direct Unsplash HTML access returned an authorization error, so source and license pages were verified with public web retrieval; photographs were downloaded from the verified images.unsplash.com asset URLs.

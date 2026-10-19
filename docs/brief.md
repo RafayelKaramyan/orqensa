@@ -1,8 +1,8 @@
-# ORQENSA working brief
+# ORQENSA product brief
 
 An original architecture/interiors React portfolio concept by Rafayel Karamyan.
-Raf deferred the personal portfolio and asked for one more project with a stronger
-visual and interaction standard. Existing releases stay intact.
+Let visitors explore spatial ideas, try a material pairing, arrange a small room
+and keep a portable project brief.
 
 ## Experience
 
@@ -27,8 +27,6 @@ text during animation, reduced motion and an explicit motion pause.
 
 React/strict TypeScript, GSAP and optional R3F/Three.js; GitHub Pages, no paid
 service, extra hosting account or Render. Public author: Rafayel Karamyan.
-The exact-name search for ORQENSA returned no indexed match on 19 October 2026;
-this is not a worldwide uniqueness or trademark guarantee.
 
 Browser tests run on GitHub Actions before Pages deployment. Verification notes
 distinguish executed checks from prepared checks and manual inspection.
