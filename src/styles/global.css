@@ -2716,11 +2716,13 @@
     .footer-top > a {
       font-size: clamp(63px, 14vw, 105px);
       grid-column: 1/-1;
+      width: 100%;
     }
     .footer-top > a svg {
       width: 35px;
       height: 35px;
-      left: calc(100% + 23px);
+      left: auto;
+      right: 0;
     }
     .footer-top > p:last-child {
       grid-column: 1/-1;
@@ -3451,6 +3453,9 @@
     }
   }
   @media (max-width: 360px) {
+    .footer-top > a {
+      font-size: 55px;
+    }
     .wordmark {
       font-size: 19px;
     }

@@ -4,6 +4,9 @@ import { readFile } from 'node:fs/promises';
 async function route(page: Page, path = '') {
   await page.goto(`./#/${path}`);
   await expect(page.locator('main h1')).toBeVisible();
+  await page.evaluate(async () => {
+    await document.fonts.ready;
+  });
 }
 async function saveRoom(page: Page) {
   await route(page, 'lab');
@@ -291,8 +294,8 @@ test('navigation, motion controls, accessibility scans and layouts', async ({
   }
   for (const path of ['', 'lab', 'materials', 'brief', 'collection']) {
     await route(page, path);
-    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(
-      true,
+    expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(
+      page.viewportSize()!.width + 1,
     );
     const scan = await new AxeBuilder({ page })
       .withTags(['wcag2a', 'wcag2aa', 'wcag21aa'])
@@ -304,9 +307,9 @@ test('navigation, motion controls, accessibility scans and layouts', async ({
     await page.setViewportSize({ width: 320, height: 780 });
     for (const path of ['', 'lab', 'brief']) {
       await route(page, path);
-      expect(
-        await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1),
-      ).toBe(true);
+      expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(
+        page.viewportSize()!.width + 1,
+      );
     }
     await route(page, 'lab');
     await page.screenshot({ path: testInfo.outputPath('lab-320.png'), fullPage: true });
