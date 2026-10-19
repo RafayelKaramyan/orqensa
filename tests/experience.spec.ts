@@ -116,14 +116,17 @@ test('pointer dragging commits snapped positions', async ({ page, isMobile }) =>
   const chair = page.getByRole('button', { name: /^Lounge chair, X/ });
   await chair.scrollIntoViewIfNeeded();
   const box = await chair.boundingBox();
-  const plan = await page.locator('.editor-canvas .floor-plan').boundingBox();
+  const delta = await page.locator('.editor-canvas .floor-plan').evaluate((element) => {
+    const matrix = (element as SVGSVGElement).getScreenCTM();
+    if (!matrix) throw new Error('The room plan has no screen projection.');
+    return { x: (matrix.a + matrix.c) * 100, y: (matrix.b + matrix.d) * 100 };
+  });
   expect(box).not.toBeNull();
-  expect(plan).not.toBeNull();
   const x = box!.x + box!.width / 2;
   const y = box!.y + box!.height / 2;
   await page.mouse.move(x, y);
   await page.mouse.down();
-  await page.mouse.move(x + plan!.width / 7.4, y + plan!.width / 7.4, { steps: 12 });
+  await page.mouse.move(x + delta.x, y + delta.y, { steps: 12 });
   await page.mouse.up();
   await expect(chair).toHaveAttribute('aria-label', /X 1\.4, Y 1\.4/);
 });
@@ -295,6 +298,19 @@ test('navigation, motion controls, accessibility scans and layouts', async ({
       .withTags(['wcag2a', 'wcag2aa', 'wcag21aa'])
       .analyze();
     expect(scan.violations).toEqual([]);
+  }
+  if (isMobile) {
+    const viewport = page.viewportSize()!;
+    await page.setViewportSize({ width: 320, height: 780 });
+    for (const path of ['', 'lab', 'brief']) {
+      await route(page, path);
+      expect(
+        await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1),
+      ).toBe(true);
+    }
+    await route(page, 'lab');
+    await page.screenshot({ path: testInfo.outputPath('lab-320.png'), fullPage: true });
+    await page.setViewportSize(viewport);
   }
   await page.emulateMedia({ reducedMotion: 'no-preference' });
   await route(page);

@@ -1258,6 +1258,8 @@
     left: 25px;
     z-index: 5;
     font-size: 8px;
+    background: var(--paper);
+    padding: 4px 7px;
   }
   .sample-wall {
     position: absolute;
@@ -1322,6 +1324,8 @@
     left: 25px;
     z-index: 5;
     font-size: 8px;
+    background: var(--paper);
+    padding: 4px 7px;
   }
   .palette-controls {
     padding-block: 22px;
@@ -1634,8 +1638,8 @@
     gap: 12px;
   }
   .canvas-toolbar > .mono {
-    font-size: 7px;
-    color: #636b5b;
+    font-size: 8px;
+    color: #505a48;
     text-align: right;
   }
   .floor-plan {
@@ -3068,6 +3072,8 @@
     .editor-actions {
       width: 100%;
       justify-content: flex-start;
+      flex-wrap: wrap;
+      row-gap: 10px;
     }
     .editor-actions .button {
       margin-left: auto;
@@ -3110,7 +3116,7 @@
       gap: 8px;
     }
     .editor-swatches button {
-      font-size: 8px;
+      font-size: 10px;
       padding: 5px;
       gap: 6px;
     }
@@ -3152,7 +3158,7 @@
       min-height: 34px;
     }
     .canvas-toolbar > .mono {
-      font-size: 5.5px;
+      font-size: 7px;
       max-width: 85px;
     }
     .canvas-caption {
@@ -3202,12 +3208,12 @@
     }
     .object-list > button {
       padding-block: 10px;
-      font-size: 9px;
-      min-height: 35px;
+      font-size: 11px;
+      min-height: 44px;
     }
     .position-fields > div {
       gap: 5px;
-      font-size: 8px;
+      font-size: 10px;
     }
     .position-fields button {
       width: 23px;
@@ -3222,7 +3228,7 @@
       flex-wrap: wrap;
     }
     .object-buttons button {
-      font-size: 8px;
+      font-size: 10px;
     }
     .editor-instructions {
       padding: 16px;
