@@ -1,0 +1,150 @@
+{
+  "verifiedAt": "2026-10-18",
+  "license": {
+    "name": "Unsplash License",
+    "url": "https://unsplash.com/license",
+    "summary": "Permits free commercial and non-commercial use and modification; restrictions include unmodified resale and building a competing image service."
+  },
+  "usage": "Licensed reference photography for fictional spatial studies. These images do not document ORQENSA or Rafayel Karamyan architectural commissions.",
+  "transform": "Images retain their full composition, with EXIF orientation applied, converted to sRGB-compatible RGB and resized without upscaling. Encoded as WebP at quality 84.",
+  "images": {
+    "court": {
+      "downloadedSource": {
+        "width": 1800,
+        "height": 1800,
+        "bytes": 649532
+      },
+      "variants": [
+        {
+          "path": "/images/court-900.webp",
+          "width": 900,
+          "height": 900,
+          "bytes": 115200,
+          "format": "image/webp"
+        },
+        {
+          "path": "/images/court-1800.webp",
+          "width": 1800,
+          "height": 1800,
+          "bytes": 413042,
+          "format": "image/webp"
+        }
+      ]
+    },
+    "atrium": {
+      "downloadedSource": {
+        "width": 1800,
+        "height": 1200,
+        "bytes": 453407
+      },
+      "variants": [
+        {
+          "path": "/images/atrium-900.webp",
+          "width": 900,
+          "height": 600,
+          "bytes": 76024,
+          "format": "image/webp"
+        },
+        {
+          "path": "/images/atrium-1800.webp",
+          "width": 1800,
+          "height": 1200,
+          "bytes": 251488,
+          "format": "image/webp"
+        }
+      ]
+    },
+    "concrete": {
+      "downloadedSource": {
+        "width": 1800,
+        "height": 1350,
+        "bytes": 474780
+      },
+      "variants": [
+        {
+          "path": "/images/concrete-900.webp",
+          "width": 900,
+          "height": 675,
+          "bytes": 76280,
+          "format": "image/webp"
+        },
+        {
+          "path": "/images/concrete-1800.webp",
+          "width": 1800,
+          "height": 1350,
+          "bytes": 292536,
+          "format": "image/webp"
+        }
+      ]
+    },
+    "facade": {
+      "downloadedSource": {
+        "width": 1800,
+        "height": 2700,
+        "bytes": 288149
+      },
+      "variants": [
+        {
+          "path": "/images/facade-900.webp",
+          "width": 900,
+          "height": 1350,
+          "bytes": 50870,
+          "format": "image/webp"
+        },
+        {
+          "path": "/images/facade-1800.webp",
+          "width": 1800,
+          "height": 2700,
+          "bytes": 125226,
+          "format": "image/webp"
+        }
+      ]
+    },
+    "interior": {
+      "downloadedSource": {
+        "width": 1800,
+        "height": 2400,
+        "bytes": 728053
+      },
+      "variants": [
+        {
+          "path": "/images/interior-900.webp",
+          "width": 900,
+          "height": 1200,
+          "bytes": 108456,
+          "format": "image/webp"
+        },
+        {
+          "path": "/images/interior-1800.webp",
+          "width": 1800,
+          "height": 2400,
+          "bytes": 377256,
+          "format": "image/webp"
+        }
+      ]
+    },
+    "detail": {
+      "downloadedSource": {
+        "width": 1800,
+        "height": 2705,
+        "bytes": 847951
+      },
+      "variants": [
+        {
+          "path": "/images/detail-900.webp",
+          "width": 900,
+          "height": 1352,
+          "bytes": 95690,
+          "format": "image/webp"
+        },
+        {
+          "path": "/images/detail-1800.webp",
+          "width": 1800,
+          "height": 2705,
+          "bytes": 426472,
+          "format": "image/webp"
+        }
+      ]
+    }
+  }
+}

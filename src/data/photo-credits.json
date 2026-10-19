@@ -1,0 +1,38 @@
+{
+  "court": {
+    "author": "Pixasquare",
+    "page": "https://unsplash.com/photos/white-concrete-house-near-green-tree-during-daytime-4ojhpgKpS68",
+    "asset": "https://images.unsplash.com/photo-1523217582562-09d0def993a6",
+    "alt": "White cubic house with deep recesses, a narrow path and a lawn beneath a blue sky."
+  },
+  "atrium": {
+    "author": "Leonardo Vargas",
+    "page": "https://unsplash.com/photos/modern-interior-courtyard-with-concrete-walls-and-plants-64txwt06VKA",
+    "asset": "https://images.unsplash.com/photo-1766128867730-b10474e59f1b",
+    "alt": "Concrete courtyard with a small tree, red window frames and glowing round pendant lights."
+  },
+  "concrete": {
+    "author": "Neon Wang",
+    "page": "https://unsplash.com/photos/modern-concrete-architecture-with-grassy-courtyard-and-stairs-igxSlxxKSb8",
+    "asset": "https://images.unsplash.com/photo-1762419757194-406cc4a13d73",
+    "alt": "Sunken concrete courtyard with a long stair, geometric patches of lawn and a blue sky."
+  },
+  "facade": {
+    "author": "Adam Birkett",
+    "page": "https://unsplash.com/photos/white-and-gray-concrete-house-BJSLmyungtE",
+    "asset": "https://images.unsplash.com/photo-1484589703317-ac06479d2e8f",
+    "alt": "Pale metal and concrete facade with an angular roof edge against a light gray sky."
+  },
+  "interior": {
+    "author": "Neon Wang",
+    "page": "https://unsplash.com/photos/modern-concrete-interior-with-wooden-floor-and-large-window-fUsxJC1KVGQ",
+    "asset": "https://images.unsplash.com/photo-1774516534097-76eb46de7229",
+    "alt": "Angular concrete interior with a timber bench and daylight entering through tall windows."
+  },
+  "detail": {
+    "author": "Ryunosuke Kikuno",
+    "page": "https://unsplash.com/photos/a-room-with-wooden-walls-and-a-concrete-floor-5MYtqTJh5Nc",
+    "asset": "https://images.unsplash.com/photo-1632378207821-81b303eba993",
+    "alt": "Warm timber walls and ceiling with narrow vertical openings above a concrete floor."
+  }
+}
